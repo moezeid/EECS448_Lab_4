@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+
+<title> Web Store </title>
+
+<script type="text/javascript" src="formChecker.js"> </script>
+<link href="style.css" rel="stylesheet" type="text/css"/>
+
+
+</head>
+<body>
+
+<h1 align="center" > <font color="white"> Knick-Knacks & Trinkets </font> </h1>
+
+<br>
+<h3> These are various items and wears that I have encountered throughout my travels...</h3>
+
+<h4> ...but they're mostly just items from my backpack </h4>
+<br>
+
+
+<form action='customerBackend.php' id="storeForm" method = 'post' onsubmit= "return validation();" >
+
+
+
+
+  <li>
+  <div>
+     <label for "useremail"> Please enter email </label>
+     <br>
+     <br>
+    <input type="email" name="useremail" id="useremail"  oninvalid="alert('please enter an email');" required>
+
+  </div>
+
+  <br>
+
+  <div>
+    <label for "userpass"> Please enter password </label>
+
+    <br>
+   <input type="password" name="userpass" id="userpass" >
+ </div>
+
+ <br>
+
+
+</li>
+
+<li>
+
+  <h2 align="center">- Current Products Available For Sale - <h2>
+
+    <div align="center">
+      <img src="https://vignette.wikia.nocookie.net/spongebob/images/c/c8/I_Had_an_Accident_12.jpg/revision/latest?cb=20120820041219
+" width="10%" height="10%"></img><br>
+      <label for "item1"> Penny ($5) </label><br>
+      <h class="description">A penny for your thoughts. But $5 for this penny.  </h><br>
+       <h class="description"> This little guy will listen to your thoughts all day, so don't snooze on him! This is an AUTHENTIC product from the episode, "I Had an Accident" </h> <br>
+    <font size="2" > Enter Quantity:</font>
+     <input type="number" name="item3" id="item3" >
+    </div>
+
+<br>
+<br>
+
+
+
+    <div align="center">
+      <img src="napkin.jpg" width="10%" height="10%"></img><br>
+      <label for "item1"> Used Napkin ($3) </label><br>
+      <h class="description"> This item is the AUTHENTIC used napkin from the infamous Spongebob episode "I Had an Accident" </h>
+    <font size="2" ><br> Enter Quantity:</font>
+     <input type="number" name="item1" id="item1" >
+   </div>
+<br>
+<br>
+   <div align="center">
+     <img src="https://vignette.wikia.nocookie.net/spongebob/images/4/48/I_Had_an_Accident_13.jpg/revision/latest?cb=20120820030956" width="10%" height="10%"></img><br>
+     <label for "item1"> Chip ($2)</label><br>
+     <h class="description"> Ever wanted to hang with Chip like the Sponge guy himself?</h><br>
+      <h class="description"> Well now you and Chip can have your very own unique banter! This is an AUTHENTIC product from the episode, "I Had an Accident" </h> <br>
+   <font size="2" > Enter Quantity:</font>
+    <input type="number" name="item2" id="item2"  >
+   </div>
+<h4> Shipping </h4>
+<li>
+
+   <div>
+   <input type="radio" name="ship" id="c1" value="0">
+   <label for "c1"> Free 7-Day Shipping</label>
+   <br>
+   </div>
+
+
+   <div>
+   <input type="radio" name="ship" id="c2" value="50">
+   <label for "c2"> $50.00 overnight </label>
+   <br>
+   </div>
+
+   <div>
+   <input type="radio" name="ship" id="c3" value="5">
+   <label for "c3"> $5.00 three day</label>
+   <br>
+   </div>
+
+</li>
+
+<br>
+<br>
+<div class="submit">
+<button type= "submit" align="center">Submit</button> </div> <br>
+
+<input type="reset" align="center">
+
+</form>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
