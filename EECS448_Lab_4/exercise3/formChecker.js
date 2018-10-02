@@ -3,7 +3,7 @@ let invalidForm=true;
 
 let errorMsg= "Some errors occured: "
 function validation(){
-  alert("hey!");
+
   let errorCount=0;
 
   let second = document.getElementById("userpass").value;
